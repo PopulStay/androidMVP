@@ -1,6 +1,9 @@
 package com.populstay.app.activity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -65,4 +68,31 @@ public class MainActivity extends BaseActivity {
 
 		return super.onOptionsItemSelected(item);
 	}
+
+	private static boolean mIsExit = false;
+	@SuppressLint("HandlerLeak")
+	private static Handler mHandler = new Handler() {
+		@Override
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+			mIsExit = false;
+		}
+	};
+
+	@Override
+	public void onBackPressed() {
+		exit();
+	}
+
+	private void exit() {
+		if (!mIsExit) {
+			mIsExit = true;
+			myToast("Click again to quit");
+			mHandler.sendEmptyMessageDelayed(0, 2000);
+		} else {
+			finish();
+			System.exit(0);
+		}
+	}
+
 }
