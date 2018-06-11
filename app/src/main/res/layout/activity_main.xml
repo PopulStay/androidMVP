@@ -24,7 +24,7 @@
             android:id="@+id/bottom_nav_bar"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            app:bb_tabXmlResource="@menu/bottom_nav_tabs"/>
+            app:bb_tabXmlResource="@xml/bottom_nav_tabs"/>
 
     </LinearLayout>
 
