@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">潮箱</string>
     <string name="action_become_a_host">成为房东</string>
-    <string name="action_become_a_organiser">Become a organiser</string>
-    <string name="action_help">Help</string>
-    <string name="action_log_in">Log in</string>
-    <string name="action_sign_up">Sign up</string>
+    <string name="action_become_a_organiser">成为组织者</string>
+    <string name="action_help">帮助</string>
+    <string name="action_log_in">登录</string>
+    <string name="action_sign_up">注册</string>
 
     <string name="title_explore">探索</string>
     <string name="title_favorites">心愿单</string>
