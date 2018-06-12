@@ -7,9 +7,13 @@
     <string name="action_log_in">Log in</string>
     <string name="action_sign_up">Sign up</string>
 
+    // 底部导航栏
     <string name="title_explore">EXPLORE</string>
     <string name="title_favorites">FAVORITES</string>
     <string name="title_journey">JOURNEY</string>
     <string name="title_message">MESSAGE</string>
     <string name="title_me">ME</string>
+
+    // 消息提示
+    <string name="msg_double_click_to_exit">Click again to quit</string>
 </resources>
