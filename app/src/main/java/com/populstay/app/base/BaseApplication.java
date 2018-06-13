@@ -3,6 +3,8 @@ package com.populstay.app.base;
 import android.app.Application;
 import android.content.Context;
 
+import org.xutils.x;
+
 
 /**
  * Created by Jerry on 2018/6/1
@@ -16,6 +18,8 @@ public class BaseApplication extends Application {
 		super.onCreate();
 
 		mContext = getApplicationContext();
+
+		x.Ext.init(this); // 初始化 xutils
 	}
 
 	/**
