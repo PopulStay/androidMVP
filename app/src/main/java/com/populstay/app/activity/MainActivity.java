@@ -11,6 +11,10 @@ import android.support.v4.app.FragmentTransaction;
 import com.populstay.app.R;
 import com.populstay.app.base.BaseActivity;
 import com.populstay.app.fragment.MainExploreFragment;
+import com.populstay.app.fragment.MainFavoritesFragment;
+import com.populstay.app.fragment.MainJourneyFragment;
+import com.populstay.app.fragment.MainMeFragment;
+import com.populstay.app.fragment.MainMessageFragment;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabReselectListener;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -93,10 +97,10 @@ public class MainActivity extends BaseActivity implements OnTabSelectListener, O
 
 		mFragments = new ArrayList<>();
 		mFragments.add(new MainExploreFragment());
-//		mFragments.add(new MainFavoritesFragment());
-//		mFragments.add(new MainJourneyFragment());
-//		mFragments.add(new MainMessageFragment());
-//		mFragments.add(new MainMeFragment());
+		mFragments.add(new MainFavoritesFragment());
+		mFragments.add(new MainJourneyFragment());
+		mFragments.add(new MainMessageFragment());
+		mFragments.add(new MainMeFragment());
 		replaceFragment(mFragments.get(TAB_EXPLORE));
 	}
 
@@ -118,21 +122,21 @@ public class MainActivity extends BaseActivity implements OnTabSelectListener, O
 				index = TAB_EXPLORE;
 				break;
 
-//			case R.id.bottom_nav_favorites:
-//				index = TAB_FAVORITES;
-//				break;
-//
-//			case R.id.bottom_nav_journey:
-//				index = TAB_JOURNEY;
-//				break;
-//
-//			case R.id.bottom_nav_message:
-//				index = TAB_MESSAGE;
-//				break;
-//
-//			case R.id.bottom_nav_me:
-//				index = TAB_ME;
-//				break;
+			case R.id.bottom_nav_favorites:
+				index = TAB_FAVORITES;
+				break;
+
+			case R.id.bottom_nav_journey:
+				index = TAB_JOURNEY;
+				break;
+
+			case R.id.bottom_nav_message:
+				index = TAB_MESSAGE;
+				break;
+
+			case R.id.bottom_nav_me:
+				index = TAB_ME;
+				break;
 
 			default:
 				break;
