@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#db2556</color>
+    <color name="colorPrimaryDark">#100f0f</color>
+    <color name="colorAccent">#db2556</color>
+
+    <!-- 文本内容颜色 -->
+    <color name="text_gray_light">#999999</color>
+    <color name="text_gray_medium">#666666</color>
+    <color name="text_gray_dark">#222222</color>
+
+    <color name="gray_line">#d6d6d6</color>
+    <color name="white">#ffffff</color>
+
+    <!-- ++++++++++++++++++++++++ 主按钮颜色属性值 ++++++++++++++++++++++++ -->
+    <!-- 正常状态的背景色 -->
+    <color name="btn_main_normal">@color/colorAccent</color>
+    <!-- 按下时的背景色 -->
+    <color name="btn_main_pressed">#b21741</color>
+    <!-- 不可点击时的背景色 -->
+    <color name="btn_main_unable">#99FF4081</color>
+    <!-- ++++++++++++++++++++++++ 主按钮颜色属性值 ++++++++++++++++++++++++ -->
+
+</resources>
