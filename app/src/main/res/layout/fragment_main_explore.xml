@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.jerryjerry.jerryme.activity.MainActivity"
-    tools:showIn="@layout/app_bar_main">
-
-    <!--<Button-->
-    <!--android:id="@+id/btn_album_pick"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:text="相册选择 9 张图片"-->
-    <!--android:layout_height="wrap_content"/>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -24,9 +14,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffffff"
+            android:background="@color/white"
             android:orientation="vertical"
-            android:paddingBottom="50dp"
+            android:paddingBottom="30dp"
             android:paddingLeft="16dp"
             android:paddingRight="16dp">
 
@@ -41,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Find dream homes and experiences on PopulStay"
-                    android:textColor="#000000"
+                    android:textColor="@color/text_gray_dark"
                     android:textSize="24sp"/>
 
                 <TextView
@@ -202,7 +192,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Adults"/>
+                        android:text="Guests Number"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -234,12 +224,12 @@
                             android:background="@color/gray_line"/>
 
                         <EditText
-                            android:id="@+id/et_adults"
+                            android:id="@+id/et_guests_num"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@null"
                             android:digits="1234567890"
-                            android:hint="The number of adults"
+                            android:hint="The number of guests"
                             android:inputType="phone"
                             android:padding="8dp"
                             android:textColor="@color/text_gray_medium"
@@ -259,7 +249,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Children"/>
+                        android:text="City"/>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -291,13 +281,11 @@
                             android:background="@color/gray_line"/>
 
                         <EditText
-                            android:id="@+id/et_children"
+                            android:id="@+id/et_city"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@null"
-                            android:digits="1234567890"
-                            android:hint="The number of children"
-                            android:inputType="phone"
+                            android:hint="City Name"
                             android:padding="8dp"
                             android:textColor="@color/text_gray_medium"
                             android:textColorHint="@color/text_gray_light"
@@ -309,23 +297,11 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_url"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"/>
-
             <Button
                 android:id="@+id/btn_search_home"
                 style="@style/btn_style_main"
                 android:layout_marginTop="10dp"
                 android:text="SEARCH HOME"/>
-
-            <TextView
-                android:id="@+id/tv_result"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"/>
 
         </LinearLayout>
 
